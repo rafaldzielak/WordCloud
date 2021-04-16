@@ -1,0 +1,117 @@
+* {
+  --primary-color: #0074d9;
+  --light-grey: #bbb;
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+}
+
+.rectangle {
+  margin: 2rem auto;
+  border: 1px black solid;
+  min-width: 50vw;
+  min-height: 50vh;
+  height: auto;
+  max-width: 60vw;
+}
+
+button.btn {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+  border-radius: 5px;
+  padding: 0.75rem 2.5rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+input.nick {
+  text-align: left;
+  font-size: 1.25rem;
+  width: 350px;
+  padding: 1rem;
+  border: var(--light-grey) 1px solid;
+  border-radius: 5px;
+}
+
+input:focus-visible {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+h1.head {
+  margin-top: 20%;
+  font-size: 3rem;
+}
+h2.mt {
+  margin-top: 3rem;
+}
+
+.capitalize:first-letter {
+  text-transform: capitalize;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border-spacing: 0.5rem;
+  /* display: block; */
+}
+table tbody td span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.green {
+  color: green;
+}
+.light-green {
+  color: rgb(123, 189, 0);
+}
+
+.red {
+  color: red;
+}
+.light-red {
+  color: rgba(255, 72, 0, 0.664);
+}
+
+.grey {
+  color: #999;
+}
+
+td.two-lines {
+  /* border: 1px solid black; */
+  line-height: 2rem;
+}
+td {
+  min-height: 4rem;
+  min-width: 5rem;
+}
+
+.results {
+  margin-top: 20vh;
+}
+
+@media screen and (max-width: 768px) {
+  .rectangle {
+    margin: 1rem auto;
+    border: 1px black solid;
+    min-width: 50vw;
+    min-height: 50vh;
+    height: auto;
+    max-width: 100vw;
+  }
+  table tbody td span {
+    font-size: 1rem;
+  }
+}

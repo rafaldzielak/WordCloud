@@ -8,7 +8,6 @@ const GameScreen = () => {
   const { getQuestion, game, setResult, nick } = useContext(GameContext);
   const [checkResults, setCheckResults] = useState(false);
   const [chosenWords, setChosenWords] = useState([]);
-  const [score, setScore] = useState(0);
   let arrayIndex = -1;
   if (!nick) history.push("/");
 
@@ -62,7 +61,6 @@ const GameScreen = () => {
       else badAnswers++;
     }
     const notAnswered = game.good_words.length - goodAnswers;
-    setScore(goodAnswers * 2 - badAnswers - notAnswered);
     setResult(goodAnswers * 2 - badAnswers - notAnswered);
     setCheckResults(true);
   };

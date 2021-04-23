@@ -6,7 +6,7 @@ import getRandomInt from "../utils/randomInt";
 const GameProvider = ({ children }) => {
   const [nick, setNick] = useState("");
   const [game, setGame] = useState({});
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState(null);
 
   const getQuestion = useCallback(() => {
     const questionNumber = getRandomInt(0, gamesArr.length);
